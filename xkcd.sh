@@ -13,6 +13,6 @@ curl $url | grep -Po '(?<=\"img": )(.*?)(?=\,)' > temp.txt
 python xkcd.py 
 curl $(python xkcd.py) -o image # get and save image locally
 feh -F image &  # show image in full screen mode
-sleep 60
+sleep 120
 kill $!
 done
