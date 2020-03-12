@@ -1,5 +1,9 @@
 #!/bin/bash
 
+sudo xset s off
+sudo xset -dpms
+sudo xset s noblank
+
 RANGE=1500
 while true # eternal loop
 do
@@ -15,4 +19,10 @@ curl $(python xkcd.py) -o image # get and save image locally
 feh -F image &  # show image in full screen mode
 sleep 120
 kill $!
+
+python3 dilbert.py 
+feh -F dilbert_comic &  # show image in full screen mode
+sleep 120
+kill $!
+
 done

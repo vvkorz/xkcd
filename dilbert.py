@@ -13,7 +13,7 @@ import urllib.request
 import datetime
 import random
 
-rint = random.randint(1, 500) 
+rint = random.randint(1, 400) 
 base = datetime.datetime.today()
 random_date = base - datetime.timedelta(days=rint)
 random_date = random_date.strftime('%Y-%m-%d')
